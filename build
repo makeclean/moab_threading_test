@@ -1,0 +1,5 @@
+#!/bin/bash
+# serial
+g++ moab_thread.cpp -I/mnt/data/opt/moab_dev/include -L/mnt/data/opt/moab_dev/lib -lMOAB -o moab_thread
+# threaded
+g++ moab_thread.cpp -I/mnt/data/opt/moab_dev/include -L/mnt/data/opt/moab_dev/lib -lMOAB -fopenmp -o moab_thread_omp
